@@ -5,17 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travel Website</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/e997c2cb54.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
-    <nav>
+    <nav id="navBar">
       <img src="images/logo.png" class="logo" alt="logo">
       <ul class="nav-links">
-        <li href="#">Popular Places</li>
+        <li href="#" class="active">Popular Places</li>
         <li href="#">Travel Outside</li>
         <li href="#">Online Packages</li>
       </ul>
       <a href="#" class="register-btn">Register Now</a>
+      <i class="fa-solid fa-bars" onclick="toggleBtn()"></i>
     </nav>
 
     <div class="container">
@@ -162,8 +164,32 @@
     <a href="E" class="start-btn">Start making money</a>
     <div class="about-msg">
       <h2>About Airbnb</h2>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Possimus et facilis, tenetur reiciendis ipsa suscipit
+          consequatur quasi odit nulla aliquam qui. Ipsum eum autem
+          nam quasi, ea quam labore magni? Lorem ipsum, dolor sit 
+          amet consectetur adipisicing elit. Magni dolorem
+          corrupti, accusamus adipisci placeat in praesentium aut eligendi officia modi
+          facere aperiam ut molestiae quis, est molestias! Earum, autem et.
+        </P>
     </div>
+    <footer>
+      <a href="https: //facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https: //youtube.com"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https: //twitter.com"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https: //linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https: //instagram.com"><i class="fa-brands fa-instagram"></i></a>
+      <hr>
+      <p>Copyright &copy; 2025, Starray HTML & CSS exercise.</p>
+  </footer>
 
 </div>
+
+<script>
+  var navBar = document.getElementById("navBar");
+  function toggleBtn(){
+    navBar.classList.toggle("hideMenu")
+  }
+</script>
 </body>
 </html>
